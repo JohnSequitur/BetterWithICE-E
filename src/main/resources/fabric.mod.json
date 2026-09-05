@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "examplemod",
+	"id": "icee",
 	"version": "${version}",
-	"name": "Example Mod",
+	"name": "Better With ICE-E",
 	"description": "This mod aims to help new BTA modders.",
 	"authors": [
-		"Turnip Labs"
+		"John Sequitur"
 	],
 	"contact": {
 		"homepage": "",
@@ -16,11 +16,11 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"turniplabs.examplemod.ExampleMod"
+      "jsequitur.icee.ExampleMod"
 		]
 	},
 	"mixins": [
-		"examplemod.mixins.json"
+		"jsequitur.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${fabricloader}",
