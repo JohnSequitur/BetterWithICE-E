@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-      "jsequitur.icee.ExampleMod"
+			"jsequitur.icee.IceeMod"
 		]
 	},
 	"mixins": [

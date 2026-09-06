@@ -1,23 +1,13 @@
 package jsequitur.icee.block;
 
 import net.minecraft.core.block.Block;
-import net.minecraft.core.block.BlockLogicSupplier;
 import net.minecraft.core.block.material.Materials;
-import net.minecraft.core.block.tag.BlockTags;
 import net.minecraft.core.sound.BlockSounds;
 import turniplabs.halplibe.helper.BlockBuilder;
 import net.minecraft.core.block.*;
-import net.minecraft.core.block.material.Materials;
-import net.minecraft.core.block.tag.BlockTags;
-import net.minecraft.core.item.Items;
-import net.minecraft.core.sound.BlockSound;
-import net.minecraft.core.sound.BlockSounds;
-import net.minecraft.core.world.season.Seasons;
-import turniplabs.halplibe.helper.BlockBuilder;
 import turniplabs.halplibe.helper.creativeInventory.CreativeInventoryCategory;
 import turniplabs.halplibe.helper.creativeInventory.CreativeInventoryPlacement;
-import jsequitur.icee.block.*;
-import static jsequitur.icee.ExampleMod.MOD_ID;
+import static jsequitur.icee.IceeMod.MOD_ID;
 
 public class IceeBlocks {
 	private static int startingID = 6666;
@@ -27,9 +17,6 @@ public class IceeBlocks {
 
 	public static BlockBuilder genericBlockBuilder = new BlockBuilder(MOD_ID);
 	public static Block<?> ICEE;
-//	public static Block<?> MUSHROOM_CAP_RED;
-//	public static Block<?> MUSHROOM_CAP_BROWN;
-//	public static Block<?> MUSHROOM_STEM;
 
 	private static boolean hasInit = false;
 	public static void init(){
