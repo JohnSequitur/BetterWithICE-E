@@ -1,5 +1,6 @@
-package jsequitur.icee.block;
+package jsequitur.icee;
 
+import jsequitur.icee.block.IceeBlocks;
 import jsequitur.icee.items.IceeItems;
 import net.minecraft.client.render.EntityRendererDispatcher;
 import net.minecraft.client.render.TileEntityRenderDispatcher;

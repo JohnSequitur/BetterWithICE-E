@@ -39,7 +39,7 @@ public class IceeBlocks {
 		ICEE = genericBlockBuilder
 			.setHardness(1f)
 			.setBlockSound(BlockSounds.CLOTH)
-			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.PLACEABLES))
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
 			.build("icee.block", "icee_block", newID(), b-> new BlockLogicRotatable(b, Materials.CLOTH) {});
 //		MUSHROOM_CAP_RED = MushroomBlock
 //			.build("mushroom.cap.red","mushroom_cap_red",newID(), f -> new BlockLogicMushroomBlockRed(f,Materials.WOOD));
