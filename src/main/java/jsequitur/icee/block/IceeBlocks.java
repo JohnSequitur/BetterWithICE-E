@@ -15,7 +15,8 @@ public class IceeBlocks {
 		return startingID++;
 	}
 
-	public static BlockBuilder genericBlockBuilder = new BlockBuilder(MOD_ID);
+	public static BlockBuilder genericBlockBuilder = new BlockBuilder(MOD_ID)
+		.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS));
 	public static Block<?> ICEE;
 
 	private static boolean hasInit = false;
