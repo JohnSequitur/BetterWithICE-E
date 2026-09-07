@@ -2,7 +2,6 @@ package jsequitur.icee;
 
 import jsequitur.icee.block.IceeBlocks;
 import jsequitur.icee.items.IceeItems;
-import net.minecraft.core.block.Block;
 import net.minecraft.core.block.Blocks;
 import net.minecraft.core.data.registry.Registries;
 import net.minecraft.core.data.registry.recipe.RecipeGroup;
@@ -10,12 +9,9 @@ import net.minecraft.core.data.registry.recipe.RecipeNamespace;
 import net.minecraft.core.data.registry.recipe.RecipeSymbol;
 import net.minecraft.core.data.registry.recipe.entry.RecipeEntryBlastFurnace;
 import net.minecraft.core.data.registry.recipe.entry.RecipeEntryCrafting;
-import net.minecraft.core.data.registry.recipe.entry.RecipeEntryFurnace;
-import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.item.Items;
 import turniplabs.halplibe.helper.RecipeBuilder;
-import turniplabs.halplibe.helper.recipeBuilders.RecipeBuilderFurnace;
 
 import static jsequitur.icee.IceeMod.MOD_ID;
 
