@@ -29,6 +29,14 @@ public class Texturing {
 			.setIcon("icee:item/essence"));
 		dispatcher.addDispatch(new ItemModelStandard(IceeItems.PEZZA)
 			.setIcon("icee:item/pezza"));
+		dispatcher.addDispatch(new ItemModelStandard(IceeItems.PEZZA_KETCHUP_1)
+			.setIcon("icee:item/pezza_ketchup_1"));
+		dispatcher.addDispatch(new ItemModelStandard(IceeItems.PEZZA_KETCHUP_2)
+			.setIcon("icee:item/pezza_ketchup_2"));
+		dispatcher.addDispatch(new ItemModelStandard(IceeItems.PEZZA_KETCHUP_3)
+			.setIcon("icee:item/pezza_ketchup_3"));
+		dispatcher.addDispatch(new ItemModelStandard(IceeItems.PEZZA_KETCHUP_4)
+			.setIcon("icee:item/pezza_ketchup_4"));
 		dispatcher.addDispatch(new ItemModelStandard(IceeItems.PEZZA_FROZEN)
 			.setIcon("icee:item/pezza_frozen"));
 		dispatcher.addDispatch(new ItemModelStandard(IceeItems.KETCHUP)
