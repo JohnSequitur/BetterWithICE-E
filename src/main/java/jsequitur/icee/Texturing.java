@@ -49,6 +49,14 @@ public class Texturing {
 			.setIcon("icee:item/lightner_axe"));
 		dispatcher.addDispatch(new ItemModelStandard(IceeItems.LIGHTNER_AXE_FROZEN)
 			.setIcon("icee:item/lightner_axe_frozen"));
+		dispatcher.addDispatch(new ItemModelStandard(IceeItems.ARMOR_HELMET_ICEE)
+			.setIcon("icee:item/armor_helmet_icee"));
+		dispatcher.addDispatch(new ItemModelStandard(IceeItems.ARMOR_CHESTPLACE_ICEE)
+			.setIcon("icee:item/armor_chestplate_icee"));
+		dispatcher.addDispatch(new ItemModelStandard(IceeItems.ARMOR_LEGGINGS_ICEE)
+			.setIcon("icee:item/armor_leggings_icee"));
+		dispatcher.addDispatch(new ItemModelStandard(IceeItems.ARMOR_BOOTS_ICEE)
+			.setIcon("icee:item/armor_boots_icee"));
 
 
 

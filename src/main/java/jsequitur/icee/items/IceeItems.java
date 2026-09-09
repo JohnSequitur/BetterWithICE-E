@@ -1,8 +1,11 @@
 package jsequitur.icee.items;
 
+import net.minecraft.core.enums.HumanArmorShape;
 import net.minecraft.core.item.Item;
+import net.minecraft.core.item.ItemArmor;
 import net.minecraft.core.item.ItemFood;
 import net.minecraft.core.item.material.ToolMaterial;
+import net.minecraft.core.item.tag.ItemTags;
 import net.minecraft.core.item.tool.ItemToolAxe;
 import net.minecraft.core.item.tool.ItemToolSword;
 import turniplabs.halplibe.helper.ItemBuilder;
@@ -29,6 +32,10 @@ public class IceeItems {
 	public static Item LIGHTNER_SWORD_FROZEN;
 	public static ItemToolAxe LIGHTNER_AXE;
 	public static Item LIGHTNER_AXE_FROZEN;
+	public static Item ARMOR_HELMET_ICEE;
+	public static Item ARMOR_CHESTPLACE_ICEE;
+	public static Item ARMOR_LEGGINGS_ICEE;
+	public static Item ARMOR_BOOTS_ICEE;
 
 
 
@@ -64,7 +71,14 @@ public class IceeItems {
 		LIGHTNER_AXE_FROZEN = genericItemBuilder
 			.setStackSize(1)
 			.build(new Item("axe.lightner.frozen", MOD_ID + ":item/axe_lightner_frozen", newID()));
-
+		ARMOR_HELMET_ICEE = genericItemBuilder
+			.build(new ItemArmor("armor.helmet.icee", MOD_ID + ":item/armor_helmet_icee", newID(), IceeArmorMaterial.ICEE, HumanArmorShape.HEAD).withTags(ItemTags.IS_FIRE_PROOF));
+		ARMOR_CHESTPLACE_ICEE = genericItemBuilder
+			.build(new ItemArmor("armor.chestplate.icee", MOD_ID + ":item/armor_chestplate_icee", newID(), IceeArmorMaterial.ICEE, HumanArmorShape.CHEST).withTags(ItemTags.IS_FIRE_PROOF));
+		ARMOR_LEGGINGS_ICEE = genericItemBuilder
+			.build(new ItemArmor("armor.leggings.icee", MOD_ID + ":item/armor_leggings_icee", newID(), IceeArmorMaterial.ICEE, HumanArmorShape.LEGS).withTags(ItemTags.IS_FIRE_PROOF));
+		ARMOR_BOOTS_ICEE = genericItemBuilder
+			.build(new ItemArmor("armor.boots.icee", MOD_ID + ":item/armor_boots_icee", newID(), IceeArmorMaterial.ICEE, HumanArmorShape.BOOTS).withTags(ItemTags.IS_FIRE_PROOF));
 
 	}
 
