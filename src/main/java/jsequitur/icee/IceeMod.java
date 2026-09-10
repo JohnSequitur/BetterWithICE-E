@@ -2,6 +2,7 @@ package jsequitur.icee;
 
 import jsequitur.icee.block.IceeBlocks;
 import jsequitur.icee.items.IceeItems;
+import jsequitur.icee.world.feature.IceeWorldFeatures;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.core.block.Block;
 import org.slf4j.Logger;
@@ -39,7 +40,7 @@ public class IceeMod implements ModInitializer {
 	}
 
 	public void beforeGameStart() {
-
+		IceeWorldFeatures.init();
 	}
 
 	public void afterGameStart() {
