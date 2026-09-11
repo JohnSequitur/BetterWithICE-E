@@ -45,7 +45,7 @@ public class ChunkDecoratorMixin {
 					this.world.getRandomSeed()
 			);
 
-			if (rand.nextInt(100) == 0) {
+			if (rand.nextInt(400) == 0) {
 				new WorldFeaturePipes().place(this.world, rand, x, y, z);
 			}
 		} catch (Exception e) {
