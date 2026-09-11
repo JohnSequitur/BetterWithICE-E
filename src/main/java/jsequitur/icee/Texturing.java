@@ -6,6 +6,7 @@ import net.minecraft.client.render.EntityRendererDispatcher;
 import net.minecraft.client.render.TileEntityRenderDispatcher;
 import net.minecraft.client.render.block.color.BlockColorDispatcher;
 import net.minecraft.client.render.block.model.*;
+import net.minecraft.client.render.block.model.generic.BlockModelGenericLeaves;
 import net.minecraft.client.render.item.model.ItemModelDispatcher;
 import net.minecraft.client.render.item.model.ItemModelStandard;
 import net.minecraft.core.util.helper.Side;
@@ -21,6 +22,18 @@ public class Texturing {
 			.setTex("icee:block/icee_block_front", Side.NORTH)
 			.setTex("icee:block/icee_block_sweaty", Side.WEST)
 			.setTex("icee:block/icee_block_very_sweaty", Side.EAST));
+		dispatcher.addDispatch(new BlockModelStandard<>(IceeBlocks.EGG_LOG)
+			.setTex("icee:block/egg_log", Side.sides)
+			.setTex("icee:block/egg_log_end", Side.TOP)
+			.setTex("icee:block/egg_log_end", Side.BOTTOM));
+		dispatcher.addDispatch(new BlockModelStandard<>(IceeBlocks.EGG_LOG_BASE)
+			.setTex("icee:block/egg_log_base", Side.sides)
+			.setTex("icee:block/egg_log_end", Side.TOP)
+			.setTex("icee:block/egg_log_end", Side.BOTTOM));
+		dispatcher.addDispatch(new BlockModelStandard<>(IceeBlocks.EGG_LEAVES)
+			.setTex("icee:block/egg_leaves_fast", Side.sides)
+			.setTex("icee:block/egg_leaves_fast", Side.TOP)
+			.setTex("icee:block/egg_leaves_fast", Side.BOTTOM));
 	}
 
 	public static void initItemModels(ItemModelDispatcher dispatcher) {

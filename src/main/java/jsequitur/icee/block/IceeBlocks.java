@@ -2,6 +2,7 @@ package jsequitur.icee.block;
 
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.material.Materials;
+import net.minecraft.core.block.tag.BlockTags;
 import net.minecraft.core.sound.BlockSounds;
 import turniplabs.halplibe.helper.BlockBuilder;
 import net.minecraft.core.block.*;
@@ -18,6 +19,9 @@ public class IceeBlocks {
 	public static BlockBuilder genericBlockBuilder = new BlockBuilder(MOD_ID)
 		.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS));
 	public static Block<?> ICEE;
+	public static Block<?> EGG_LEAVES;
+	public static Block<?> EGG_LOG;
+	public static Block<?> EGG_LOG_BASE;
 
 	private static boolean hasInit = false;
 	public static void init(){
@@ -40,8 +44,22 @@ public class IceeBlocks {
 		ICEE = genericBlockBuilder
 			.setHardness(1f)
 			.setBlockSound(BlockSounds.CLOTH)
-			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
 			.build("icee.block", "icee_block", newID(), b-> new BlockLogicRotatable(b, Materials.CLOTH) {});
+		EGG_LOG = genericBlockBuilder
+			.setHardness(5f)
+			.setBlockSound(BlockSounds.WOOD)
+			.setTags(BlockTags.MINEABLE_BY_AXE, BlockTags.FENCES_CONNECT)
+			.build("egg.log", "egg_log", newID(), b-> new BlockLogic(b, Materials.WOOD) {});
+		EGG_LOG_BASE = genericBlockBuilder
+			.setHardness(5f)
+			.setBlockSound(BlockSounds.WOOD)
+			.setTags(BlockTags.MINEABLE_BY_AXE, BlockTags.FENCES_CONNECT)
+			.build("egg.log.base", "egg_log_base", newID(), b-> new BlockLogic(b, Materials.WOOD) {});
+		EGG_LEAVES = genericBlockBuilder
+			.setHardness(1f)
+			.setBlockSound(BlockSounds.GRASS)
+			.setTags(BlockTags.MINEABLE_BY_SHEARS)
+			.build("egg.leaves", "egg_leaves", newID(), b-> new BlockLogic(b, Materials.LEAVES) {});
 //		MUSHROOM_CAP_RED = MushroomBlock
 //			.build("mushroom.cap.red","mushroom_cap_red",newID(), f -> new BlockLogicMushroomBlockRed(f,Materials.WOOD));
 //		MUSHROOM_CAP_BROWN = MushroomBlock

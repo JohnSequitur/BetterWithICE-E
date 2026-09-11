@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:block/leaves/leaves",
+  "textures": { "all": "icee:block/egg_leaves" }
+}
